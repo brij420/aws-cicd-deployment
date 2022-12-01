@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - ./mvnw bootJar
+      - ./mvnw clean install
   post_build:
     commands:
       - echo Build completed
