@@ -11,10 +11,9 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn package
 artifacts:
   files:
-    - target/*.jar
+    - target/aws-ci-cd-demo-0.0.1-SNAPSHOT.jar
     - scripts/*.sh
     - appspec.yml
   #com/mycompany/app/HelloWorld.java, specifying yes will place this file in /HelloWorld.java
